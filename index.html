@@ -224,7 +224,7 @@ implementation - Implementation only dependencies for source set 'main'. (n)
 
 (n) - Not resolved (configuration is not meant to be resolved)
 
-BUILD SUCCESSFUL in 21s
+BUILD SUCCESSFUL in 17s
 1 actionable task: 1 executed</pre>
 </div>
 </div>
@@ -294,7 +294,7 @@ Due to simplicity of this two line application, testing will be left from from t
 :classes
 :jar
 
-BUILD SUCCESSFUL in 10s
+BUILD SUCCESSFUL in 6s
 2 actionable tasks: 2 executed</pre>
 </div>
 </div>
@@ -342,12 +342,12 @@ mainClassName = <span class="string"><span class="delimiter">'</span><span class
 :check UP-TO-DATE
 :build
 
-BUILD SUCCESSFUL in 2s
+BUILD SUCCESSFUL in 1s
 5 actionable tasks: 3 executed, 2 up-to-date</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If you inspect the <code>build/distributions</code> folder you will notice both <code>.zip</code> and <code>.tar</code> archives. This is the application ready for distribution. Now it is time to test your application manually. The Application plugin provides a useful <code>instalLDist</code></p>
+<p>If you inspect the <code>build/distributions</code> folder you will notice both <code>.zip</code> and <code>.tar</code> archives. This is the application ready for distribution. Now it is time to test your application manually. The Application plugin provides a useful <code>instalLDist</code> task to install your application into the <code>build/install</code> folder for validation purposes.</p>
 </div>
 <div class="listingblock terminal">
 <div class="content">
@@ -365,7 +365,7 @@ BUILD SUCCESSFUL in 1s
 </div>
 </div>
 <div class="paragraph">
-<p>Look in <code>build/install</code> where you should find a <code>greeterApp</code> folder containing <code>lib</code> and <code>bin</code> folders. I fyou look inthe <code>lib</code> folder you will see both your application and the JFiglet JARs.</p>
+<p>Look in <code>build/install</code> where you should find a <code>greeterApp</code> folder containing <code>lib</code> and <code>bin</code> folders. If you look inthe <code>lib</code> folder you will see both your application and the JFiglet JARs.</p>
 </div>
 <div class="paragraph">
 <p>Run the application by changing to the <code>build/install/greeterApp</code> folder and executing the application.</p>
@@ -447,7 +447,7 @@ $ ./bin/greeterApp Gradle
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-03 11:11:24 UTC
+Last updated 2017-07-03 11:15:40 UTC
 </div>
 </div>
 </body>
