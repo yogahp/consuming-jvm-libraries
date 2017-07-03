@@ -224,7 +224,7 @@ implementation - Implementation only dependencies for source set 'main'. (n)
 
 (n) - Not resolved (configuration is not meant to be resolved)
 
-BUILD SUCCESSFUL in 17s
+BUILD SUCCESSFUL in 21s
 1 actionable task: 1 executed</pre>
 </div>
 </div>
@@ -283,23 +283,19 @@ Due to simplicity of this two line application, testing will be left from from t
 </table>
 </div>
 <div class="paragraph">
-<p>Build your application by using the <code>assemble</code> task.</p>
+<p>Build your application by using the <code>jar</code> task.</p>
 </div>
 <div class="listingblock terminal">
 <div class="content">
-<pre>$ ./gradlew assemble
+<pre>$ ./gradlew jar
 
 :compileJava
 :processResources NO-SOURCE
 :classes
 :jar
-:startScripts
-:distTar
-:distZip
-:assemble
 
-BUILD SUCCESSFUL in 9s
-5 actionable tasks: 5 executed</pre>
+BUILD SUCCESSFUL in 10s
+2 actionable tasks: 2 executed</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -335,19 +331,19 @@ mainClassName = <span class="string"><span class="delimiter">'</span><span class
 :processResources NO-SOURCE
 :classes UP-TO-DATE
 :jar UP-TO-DATE
-:startScripts UP-TO-DATE
-:distTar UP-TO-DATE
-:distZip UP-TO-DATE
-:assemble UP-TO-DATE
+:startScripts
+:distTar
+:distZip
+:assemble
 :compileTestJava NO-SOURCE
 :processTestResources NO-SOURCE
 :testClasses UP-TO-DATE
 :test NO-SOURCE
 :check UP-TO-DATE
-:build UP-TO-DATE
+:build
 
-BUILD SUCCESSFUL in 0s
-5 actionable tasks: 5 up-to-date</pre>
+BUILD SUCCESSFUL in 2s
+5 actionable tasks: 3 executed, 2 up-to-date</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -451,7 +447,7 @@ $ ./bin/greeterApp Gradle
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-07-03 09:57:11 UTC
+Last updated 2017-07-03 11:11:24 UTC
 </div>
 </div>
 </body>
